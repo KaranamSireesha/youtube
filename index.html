@@ -17,12 +17,49 @@
 </head>
 
 <body class="bg-dark">
-    <nav>
-        <div></div>
+    <nav class="navbar navbar-expand-lg p-0 ">
+        <div class="relative navbar-custom  d-flex justify-content-between">
+
+            <div class="btn-sidebar">
+                <div style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776;</div>
+            </div>
+
+            <div class="img">
+                <img class="imglogo" src="./assets/youtube_pixabay-three_four-removebg-preview.png" alt="" />
+            </div>
+            <div class="search d-flex ">
+                <input type="text" class="text bg-dark px-3" placeholder="search" /><button class="searchbtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <div class="mic d-flex mx-2"><i class="m-auto fa-solid fa-microphone"></i></div>
+
+            </div>
+
+
+            <div class="navicon d-flex justify-content-end">
+                <div class="s me-4">
+                    <i class="fa-solid fa-grip"></i>
+                    <i class="s1 fa-solid fa-grip"></i>
+                </div>
+                <div class="icon me-3">
+                    <a href=""><i class="fa-solid fa-video"></i></a>
+                </div>
+
+                <div class="icon me-4">
+                    <a href=""><i class="fa-regular fa-bell"></i></a>
+                </div>
+                <div class="icon me-4">
+                    <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+                </div>
+
+            </div>
+        </div>
+
     </nav>
 
+    </div>
+
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#"><i class="fa-sharp fa-solid fa-house"></i> Home</a>
         <a href="#"> <i class="fa-sharp fa-regular fa-compass"></i> Explore</a>
         <a href="#"><i class="fa-regular fa-bell"></i> Subscriptions</a>
@@ -37,13 +74,13 @@
         <b class="ps-4 text-secondary">SUBSCRIPTIONS</b>
         <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
         <a href="#"><i class="fa-solid fa-circle-user"></i> Alan Cooper</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> Alan Cooper</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
+        <a href="#"><i class="fa-solid fa-circle-user"></i> John Doe</a>
+        <a href="#"><i class="fa-solid fa-circle-user"></i> Tech Geeks</a>
+        <a href="#"><i class="fa-solid fa-circle-user"></i> Telusko</a>
+        <a href="#"><i class="fa-solid fa-circle-user"></i> Edureka</a>
+        <a href="#"><i class="fa-solid fa-circle-user"></i> Education4u</a>
+        <a href="#"><i class="fa-solid fa-circle-user"></i> Marcus Levin</a>
+        <a href="#"><i class="fa-solid fa-circle-user"></i> Jeon Jungkook</a>
         <a href="#"><i class="fa-solid fa-angle-right fa-rotate-90"></i> Show 13 more</a>
         <hr style="height: 3px; color: grey;">
         <b class="ps-4 text-secondary">More from Youtube</b>
@@ -53,19 +90,123 @@
         <div class="livelogo">
             <a href="#">
                 <i class="fa-solid fa-wifi fa-rotate-270"></i>
-                <i class="s fa-solid fa-wifi fa-rotate-90"></i> Live</a>
+                <i class="s2 fa-solid fa-wifi fa-rotate-90"></i> Live</a>
         </div>
 
     </div>
 
-    <div class="container" id="main">
-        <div class="image">
-            <div class="channel">
-                <img style="width: 1100px;" src="./assets/image 2.png" alt="">
+    <div id="main">
+
+        <div class="channel">
+            <img style="width: 100%; height: 150px;" src="./assets/image 2.png" alt="">
+        </div>
+
+        <div class="avatar-container p-1">
+            <div class="flex-container">
+                <div class="avatar d-flex">
+                    <img class="user" src="./assets/User-Avatar.png" alt="">
+                    <div class="name text-white pt-3">Marcus Levin
+                        <div class="sub-text">1.2M subscribers</div>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="Subscribe btn btn-danger btn-lg mt-3 mx-5">SUBSCRIBES</button>
+                </div>
+
+            </div>
+            <div class="sub-list">
+                <ul class="list-unstyled d-flex justify-content-around">
+                    <li class="active">Home</li>
+                    <li>videos</li>
+                    <li>Playlists</li>
+                    <li>Community</li>
+                    <li>channel</li>
+                    <li>About</li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><i class="fa-solid fa-angle-right ms-5 ps-5"></i></li>
+                </ul>
             </div>
         </div>
+
+        <section class=" container video-space">
+            <div class="youtube-container d-flex">
+                <div class="youtube-video ">
+                    <img class="ms-5 mt-3" style="width: 300px;" src="./assets/Youtube player.png" alt="">
+                </div>
+                <div>
+                    <h6 class="text-white ms-4 mt-3">Blind Woodturner:Turning Passion into fine art</h6>
+                    <p class="sub-text text-white ms-4 mt-3">576,969 views .3 weeks ago</p>
+                    <p class="main-text text-white ms-4 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Omnis,
+                        libero.<br> Enim vitae ratione natus. Laudantium, at. Quas accusamus sunt id<br> sint inventore
+                        dolor
+                        doloremque! Sunt tempora magni natus<br> delectus sequi veritatis nobis iure.</p>
+                </div>
+
+            </div>
+            <div class="container">
+                <hr class="line">
+            </div>
+        </section>
+
+
+        <section class="container videos-list">
+            <div class="play-sect d-flex">
+                <div class="text-white  ms-5">Search on '21</div>
+                <div class="play-btn">
+                    <img style="width: 10px;" class="img-fluid ms-4" src="./assets/shape.png" alt="">
+                    PLAY ALL
+                </div>
+            </div>
+            <div class=" youtube-vid-list col-md-10 offset-md-1 d-flex ">
+                <div class="text-white m-0">
+                    <img class="img-fluid mt-3 pe-2" style="width: 180px;" src="./assets/Images.png" alt="">
+                    <p class="vid-text">Lorem ipsum dolor sit<br> amet consectetur.</p>
+                    <p class="sub-text1 ">Marcus Levin</p>
+                    <p class="sub-text text-white ">329k views.1 Month ago</p>
+                </div>
+                <div class="text-white">
+                    <img class="img-fluid mt-3 pe-2" style="width: 180px;" src="./assets/insta.svg" alt="">
+                    <p class="vid-text">Lorem ipsum dolor sit<br> amet consectetur.</p>
+                    <p class="sub-text1">Marcus Levin</p>
+                    <p class="sub-text text-white ">329k views.1 Month ago</p>
+                </div>
+                <div class="text-white">
+                    <img class="img-fluid mt-3 pe-2" style="width: 180px;" src="./assets/tiktok.svg" alt="">
+                    <p class="vid-text">Lorem ipsum dolor sit<br> amet consectetur.</p>
+                    <p class="sub-text1">Marcus Levin</p>
+                    <p class="sub-text text-white ">329k views.1 Month ago</p>
+                </div>
+                <div class="text-white">
+                    <img class="img-fluid mt-3 pe-2" style="width: 180px;" src="./assets/netf.svg" alt="">
+                    <p class="vid-text">Lorem ipsum dolor sit<br> amet consectetur.</p>
+                    <p class="sub-text1">Marcus Levin</p>
+                    <p class="sub-text text-white ">329k views.1 Month ago</p>
+                </div>
+                <div class="text-white">
+                    <img class="img-fluid mt-3 pe-2" style="width: 180px;" src="./assets/twit.svg" alt="">
+                    <p class="vid-text">Lorem ipsum dolor sit<br> amet consectetur.</p>
+                    <p class="sub-text1">Marcus Levin</p>
+                    <p class="sub-text text-white ">329k views.1 Month ago</p>
+                </div>
+
+            </div>
+            <div class="container">
+                <hr class="line">
+            </div>
+
+        </section>
+
+        <div class="play-sect d-flex">
+            <div class="text-white  ms-5">Search on '21</div>
+            <div class="play-btn">
+                <img style="width: 10px;" class="img-fluid ms-4" src="./assets/shape.png" alt="">
+                PLAY ALL
+            </div>
+        </div>
+
     </div>
-    <script src="youtube.js"></script>
+    
 </body>
 
 </html>
