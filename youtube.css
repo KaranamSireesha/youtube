@@ -191,15 +191,14 @@ li:hover {
   font-size: 14px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   .youtube-container {
     display: flex;
     flex-direction: column;
   }
-  .youtube-vid-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 90px;
+  .videos-list {
+
+    margin-left: 110px;
   }
 
   .sidenav {
@@ -225,9 +224,10 @@ li:hover {
     flex-direction: column;
 
   }
-  .youtube-video img{
-    margin: 0;
+  .item{
+    display: none;
   }
+
   .navbar-custom{
     height: 50px;
   }
